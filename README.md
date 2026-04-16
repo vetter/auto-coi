@@ -22,8 +22,8 @@ Requires Python 3.8+. Pick whichever workflow you prefer — classic `pip` or th
 ### Option A — pip / venv
 
 ```bash
-git clone https://github.com/<your-org>/coi-generator.git
-cd coi-generator
+git clone https://github.com/vetter/auto-coi.git
+cd auto-coi
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -31,8 +31,8 @@ pip install -r requirements.txt
 ### Option B — uv (recommended)
 
 ```bash
-git clone https://github.com/<your-org>/coi-generator.git
-cd coi-generator
+git clone https://github.com/vetter/auto-coi.git
+cd auto-coi
 uv venv
 uv pip install -r requirements.txt
 ```
