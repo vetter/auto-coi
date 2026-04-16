@@ -195,7 +195,7 @@ def get_recent_coauthors(orcid_id, target_name, months_lookback, email, verbose)
 def main():
     parser = argparse.ArgumentParser(
         description="Automated COI list generator for NSF/DOE using the OpenAlex API.",
-        epilog="Example: python coa_generator.py 0000-0002-2449-6720 0000-0001-2345-6789 -o team_coi.csv",
+        epilog="Example: python auto-coi.py 0000-0002-2449-6720 0000-0001-2345-6789 -o team_coi.csv",
     )
 
     parser.add_argument(

@@ -43,13 +43,13 @@ uv pip install -r requirements.txt
 
 ```bash
 uv run --with pandas --with requests --with python-dateutil \
-    coa_generator.py 0000-0002-2449-6720 -e you@university.edu
+    auto-coi.py 0000-0002-2449-6720 -e you@university.edu
 ```
 
 ## Usage
 
 ```bash
-python coa_generator.py <ORCID> [<ORCID> ...] [options]
+python auto-coi.py <ORCID> [<ORCID> ...] [options]
 ```
 
 ### Quick example
@@ -57,19 +57,19 @@ python coa_generator.py <ORCID> [<ORCID> ...] [options]
 With `pip` / activated venv:
 
 ```bash
-python coa_generator.py 0000-0002-2449-6720 -e you@university.edu
+python auto-coi.py 0000-0002-2449-6720 -e you@university.edu
 ```
 
 With `uv` (no activation needed):
 
 ```bash
-uv run coa_generator.py 0000-0002-2449-6720 -e you@university.edu
+uv run auto-coi.py 0000-0002-2449-6720 -e you@university.edu
 ```
 
 ### Multi-PI team list
 
 ```bash
-python coa_generator.py 0000-0002-2449-6720 0000-0001-2345-6789 \
+python auto-coi.py 0000-0002-2449-6720 0000-0001-2345-6789 \
     -m 48 \
     -o team_coi.csv \
     -e you@university.edu
@@ -78,7 +78,7 @@ python coa_generator.py 0000-0002-2449-6720 0000-0001-2345-6789 \
 Or with `uv`:
 
 ```bash
-uv run coa_generator.py 0000-0002-2449-6720 0000-0001-2345-6789 \
+uv run auto-coi.py 0000-0002-2449-6720 0000-0001-2345-6789 \
     -m 48 \
     -o team_coi.csv \
     -e you@university.edu
