@@ -52,6 +52,11 @@ uv run --with pandas --with requests --with python-dateutil \
 python auto-coi.py <ORCID> [<ORCID> ...] [options]
 ```
 
+> **Reminder:** always pass your email via `-e/--email`. OpenAlex uses it to put
+> you in the [polite pool](https://docs.openalex.org/how-to-use-the-api/rate-limits-and-authentication#the-polite-pool)
+> for faster, higher-quota responses. Without it, runs are noticeably slower and
+> can be throttled — the tool will warn you at startup if you forget.
+
 ### Quick example
 
 With `pip` / activated venv:

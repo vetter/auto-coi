@@ -242,6 +242,13 @@ def main():
         f"==============================================================================\n"
     )
 
+    if not args.email:
+        warn(
+            "No email provided (-e/--email). OpenAlex requests will use the anonymous "
+            "pool, which is slower and rate-limited. Pass your email to join the "
+            "'polite pool' for faster, higher-quota responses."
+        )
+
     # --- ORCID Validation Engine ---
     valid_orcids = []
     # Standard 16-digit ORCID format, with the final digit potentially being an 'X'
