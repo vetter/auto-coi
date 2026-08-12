@@ -361,7 +361,7 @@ def main():
         ]
         df = df[cols]
 
-        df.to_csv(output_filename, index=False)
+        df.to_csv(output_filename, index=False, encoding="utf-8-sig")
         print(f"Success! Exported {len(df)} co-author records to '{output_filename}'.")
     else:
         print("No co-authors found in the specified timeframe.")
